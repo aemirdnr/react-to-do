@@ -1,11 +1,7 @@
-import "./App.sass";
+import Tasks from "./components/Tasks/Tasks";
 
 function App() {
-  return (
-    <>
-      <div className="container"></div>
-    </>
-  );
+  return <Tasks />;
 }
 
 export default App;

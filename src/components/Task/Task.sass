@@ -1,0 +1,19 @@
+$task-color: #9a78ff
+$text-color: #fff
+
+.task
+    display: flex
+    align-items: center
+    justify-content: center
+
+    color: $text-color
+    background-color: $task-color
+    box-shadow: 0 0px 20px #9a78ff
+    border-radius: 1rem
+
+    .task__text
+        cursor: pointer
+        transition: color 150ms ease-in-out
+        &:hover
+            text-decoration: line-through
+            color: gray
