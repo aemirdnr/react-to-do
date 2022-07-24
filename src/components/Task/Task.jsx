@@ -1,10 +1,13 @@
 import "./Task.sass";
 import { FaTrash } from "react-icons/fa";
+import { useState } from "react";
 
 function Task(task) {
-  let isFinish = task.isDone;
+  const [isFinish, setFinish] = useState(task.isDone);
 
-  const finishTask = () => {};
+  const finishTask = () => {
+    setFinish(true);
+  };
 
   const removeTask = () => {};
 

@@ -8,6 +8,7 @@ function Tasks() {
   const createTask = (e) => {
     if (e.key === "Enter" && e.target.value !== "") {
       setList([...todoList, { task: e.target.value, isDone: false }]);
+      e.target.value = "";
     }
   };
 
