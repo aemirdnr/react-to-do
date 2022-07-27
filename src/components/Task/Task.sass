@@ -8,12 +8,13 @@ $text-color: #fff
 
     color: $text-color
     background-color: $task-color
-    box-shadow: 0 0px 20px #9a78ff
+    box-shadow: 0 0px 20px $task-color
     border-radius: 1rem
 
     .task__text
         cursor: pointer
         transition: color 150ms ease-in-out
+        word-break: break-word
         &:hover
             text-decoration: line-through
             color: black
@@ -21,7 +22,6 @@ $text-color: #fff
 .task-done
     opacity: 0.6
     .task__text
-        cursor: default
         text-decoration: line-through
         color: black
 

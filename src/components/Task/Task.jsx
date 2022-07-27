@@ -7,7 +7,7 @@ function Task(task) {
   const [isDeleted, setDelete] = useState(false);
 
   const finishTask = () => {
-    setFinish(true);
+    isFinish ? setFinish(false) : setFinish(true);
   };
 
   const removeTask = () => {
@@ -18,8 +18,8 @@ function Task(task) {
     <div
       className={
         isFinish
-          ? "task task-done w-75 mx-auto my-3 p-3 gap-3"
-          : "task w-75 mx-auto my-3 p-3 gap-3"
+          ? "task task-done mx-auto my-3 p-3 gap-3"
+          : "task mx-auto my-3 p-3 gap-3"
       }
     >
       <p onClick={finishTask} className="task__text m-0">
